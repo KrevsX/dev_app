@@ -12,7 +12,7 @@ root.render(
       amount={3000}
       married={true}
       points={[99, 33.3, 22.2]}
-      address={{street: "123 main Street", city: "new York"}}
+      address={{street: "123 Main Street", city: "new York"}}
     />
   </>
 );

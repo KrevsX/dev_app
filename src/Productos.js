@@ -12,8 +12,8 @@ export function UserCard({name, amount, married, address}) {
   return (
     <div>
       <h1>User Card</h1>
-      <p>${name}</p>
-      <p>{amount}</p>
+      <p>{name}</p>
+      <p>$ {amount}</p>
       <p>{married ? "Casado" : "Soltero"}</p>
       <ul>
         <li>City: {address.city}</li>
