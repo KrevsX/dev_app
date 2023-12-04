@@ -4,12 +4,29 @@ import { Saludos, Prueba } from "./Prueba"; //funcion junto s a una forma de exp
 import { Productos, UserCard } from "./Productos";
 import { Boton } from "./boton";
 import {TaskCard } from "./Task"
+import {Saludar} from "./Saludar"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+const handleChange =(e)=>{
+  console.log(e.target.value)
+}
+
 root.render(
   <>
-  <TaskCard ready={false}/>
+  <TaskCard ready={true}/>
+  <Saludar/>
+  <Boton text="salydar"/>
+  <input id="hola" onChange={handleChange}/>
+  <input onDoubleClick={(e)=>{console.log('dobleClick')}}/>
+  <form onSubmit={(e)=>{
+    e.preventDefault()
+    // console.log('enviado')
+    alert('Enviado')
+  }}>
+   <h1>Registro de usuarios</h1>
+   <button>Enviar</button>
+  </form>
 
 
     {/* <Boton text="click me"/>

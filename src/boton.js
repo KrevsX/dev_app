@@ -6,7 +6,9 @@ export function Boton({text, name}) {
 //   if(!text){
 //     console.error('Texto Requerido')
 //   }
-  return <button>
+  return <button onClick={function(){
+    console.log('Disparador del boton')
+  }}>
    {text} - {name}
     </button>;
 }
