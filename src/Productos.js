@@ -7,8 +7,7 @@ export function Productos({ title, name = "User" }) {
   );
 }
 
-export function UserCard({name, amount, married, address}) {
-  console.log({ name, amount, married, address });
+export function UserCard({name, amount, married, address, greet}) {
   return (
     <div>
       <h1>User Card</h1>
