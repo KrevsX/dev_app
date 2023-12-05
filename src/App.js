@@ -11,13 +11,11 @@ function App() {
     setTasks(data);
   }, []);
 
-  function createTask(tasktTitle) {
-    setTasks([
-      ...tasks,
-      {
-        title: tasktTitle,
+  function createTask(task) {
+    setTasks([...tasks, {
+        title: task.title,
         id: tasks.length,
-        descripcion: "Nueva tarea"
+        descripcion: task.description
       }
     ]);
   }
@@ -29,6 +27,7 @@ function App() {
   //     descripcion: "nueva tarea"
   //   }])
   // }
+  
   return (
     <>
       <TaskForm createTask={createTask} />
