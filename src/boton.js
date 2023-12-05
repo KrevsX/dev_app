@@ -6,11 +6,14 @@ export function Boton({text, name}) {
 //   if(!text){
 //     console.error('Texto Requerido')
 //   }
-  return <button onClick={function(){
+  return   <div>
+    <button onClick={function(){
     console.log('Disparador del boton')
   }}>
    {text} - {name}
     </button>;
+    <hr/>
+  </div>
 }
 
 Boton.propTypes = {

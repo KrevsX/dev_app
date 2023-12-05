@@ -18,6 +18,7 @@ export function UserCard({name, amount, married, address, greet}) {
         <li>City: {address.city}</li>
         <li>Address: {address.street}</li>
       </ul>
+      <hr/>
     </div>
   );
 }

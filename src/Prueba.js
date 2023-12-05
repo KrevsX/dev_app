@@ -30,6 +30,7 @@ export function Prueba() {
         <h1>{user.firstName}</h1>
         <h2>{user.lastName}</h2>
         <h3>Suma de dos numeros: {sumar(5, 7)}</h3>
+        <hr/>
       </div>
     );
   }
@@ -43,6 +44,7 @@ export function Saludos(){
     return <>
     <h1>{saludo}</h1>
     <h2>{typeExport}</h2>
+    <hr/>
         
     </>
 }

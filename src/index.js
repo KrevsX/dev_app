@@ -57,7 +57,7 @@ function Counter() {
       <hr/>
       <h1>Counter: {counter}</h1>
       <button onClick={()=>setCounter(counter+1)}>Incrementar</button>
-
+      <hr/>
       {/* Contador */}
       <h1>CONTADOR: {counter}</h1>
       <button
@@ -81,6 +81,7 @@ function Counter() {
       >
         reiniciar
       </button>
+      <hr/>
     </div>
   );
 }
@@ -97,7 +98,9 @@ root.render(
         <div key={i}>
           <h1>{user.name}</h1>
           <img src={user.image}/>
+          <hr/>
         </div>
+        
       );
     })}
 
