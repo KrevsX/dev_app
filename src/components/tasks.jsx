@@ -1,22 +1,22 @@
 export const tasks = [
     {
         id: 0,
-        title:"zero Tarea",
-        descripcion:"Primera Tarea"
+        title:"primera Tarea",
+        descripcion:"primera Tarea"
     },
     {
         id: 1,
-        title:"primera Tarea",
-        descripcion:"Primera Tarea"
+        title:"segunda Tarea",
+        descripcion:"segunda Tarea"
     },
     {
         id: 2,
-        title:"segunda Tarea",
-        descripcion:"Primera Tarea"
+        title:"tercera Tarea",
+        descripcion:"tercera Tarea"
     },
     {
         id: 3,
-        title:"tercera Tarea",
-        descripcion:"Primera Tarea"
+        title:"cuarta Tarea",
+        descripcion:"cuarta Tarea"
     },
 ]
