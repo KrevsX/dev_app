@@ -29,26 +29,27 @@ function TaskForm() {
     // console.log(title);
   };
 
+  
   return (
 <div className="max-w-md mx-auto">
-<form onSubmit={handleSubmit} className="bg-slate-800 p-10 mb-4">
-  <h1 className="text-2xl font-bold text-white mb-3">Crear Tarea</h1>
+<form onSubmit={handleSubmit} className="p-10 mb-4 bg-slate-800">
+  <h1 className="mb-3 text-2xl font-bold text-white">Crear Tarea</h1>
       <input
         placeholder="Escribe tu Tarea"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
         autoFocus
-        className="bg-slate-300 p-3 w-full mb-2"
+        className="w-full p-3 mb-2 bg-slate-300"
       />
       <textarea placeholder="Escriba la description"
       onChange={(e)=>setDescription(e.target.value)}
       value={description}
-      className="bg-slate-300 p-3 w-full mb-2"
+      className="w-full p-3 mb-2 bg-slate-300"
 
       ></textarea>
 
       <button
-      className="bg-indigo-500 px-3 py-1 text-white rounded-md">
+      className="px-3 py-1 text-white bg-indigo-500 rounded-md">
         Guardar</button>
     </form>
 </div>
